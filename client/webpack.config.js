@@ -19,6 +19,7 @@ module.exports = {
 	mode: isDevMode ? 'development' : 'production',
 	entry: {
 		main: resolve('ts', 'index.ts'),
+		products: resolve('ts', 'products.ts'),
 	},
 	output: {
 		path: path.resolve(process.cwd(), 'dist'),
@@ -65,6 +66,12 @@ module.exports = {
 			filename: "index.html",
 			template: resolve('html', 'index.html'),
 			chunks: ['main'],
+			excludeChunks: []
+		}),
+		new HtmlWebpackPlugin({
+			filename: "products.html",
+			template: resolve('html', 'products.html'),
+			chunks: ['products', 'main'],
 			excludeChunks: []
 		}),
 	].filter(Boolean),

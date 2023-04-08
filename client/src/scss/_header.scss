@@ -1,0 +1,166 @@
+@import "variables";
+
+.header {
+  &__top {
+    position: fixed;
+    background-color: #111111;
+    height: 40px;
+    width: 100vw;
+    top: 0;
+  }
+
+  &__top-content {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__contact {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 14px;
+
+    span {
+      margin-right: 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &:hover {
+      color: $base-color;
+    }
+  }
+
+  &__bottom {
+    margin-top: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  &__bottom-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $txt-color;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+
+.link {
+  position: relative;
+  transition: all 0.2s;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $base-color;
+  }
+
+  &:hover {
+    color: $base-color;
+
+    &:after {
+      transition: all 0.3s;
+      width: 30%;
+    }
+  }
+}
+
+.logo {
+  box-sizing: content-box;
+  padding: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+  width: 75px;
+  height: 50px;
+
+  &__img {
+    width: 75px;
+    height: 50px;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+
+
+  &__form {
+    display: flex;
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  &__input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    background-color: transparent;
+    color: #000;
+    font-family: inherit;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 0;
+    outline: none;
+
+    &::placeholder {
+      color: #b0b0b0;
+    }
+
+    &:focus {
+      border-color: #111111;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: $base-color;
+    padding: 0 15px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $base-color-hover;
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+}

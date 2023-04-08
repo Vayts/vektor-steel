@@ -1,0 +1,109 @@
+@import "variables";
+@import "mixins";
+
+.categories {
+  margin-top: 30px;
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      text-align: center;
+      margin: 20px 100px;
+      line-height: 2;
+    }
+
+    a {
+      @include button;
+      width: 300px;
+      text-decoration: none;
+      margin: 0 auto 40px;
+      padding: 10px 25px;
+    }
+  }
+
+  &__title-button {
+    font-size: 16px;
+    padding: 5px 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__content {
+    padding: 30px;
+  }
+
+  &__card {
+    background-color: #fff;
+    flex-basis: calc(33% - 25px);
+    margin-top: 40px;
+    transition: transform 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      vertical-align: bottom;
+    }
+  }
+
+  &__card-title {
+    color: $base-color;
+    margin: 0 0 10px;
+  }
+
+  &__button {
+    @include button;
+    padding: 10px 20px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+
+  &__description {
+    min-height: 180px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &__type-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__type-item {
+    color: #919191;
+    margin-bottom: 5px;
+    font-weight: 300;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      &:hover {
+        color: $txt-color;
+      }
+
+    }
+  }
+}

@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-left:before {
+  content: "\e911";
+}
+.icon-arrow-up:before {
+  content: "\e912";
+}
+.icon-arrow-right:before {
+  content: "\e913";
+}
+.icon-arrow-down:before {
+  content: "\e914";
+}
 .icon-out-of-order:before {
   content: "\e90e";
 }
@@ -69,10 +81,4 @@
 }
 .icon-minus:before {
   content: "\e905";
-}
-.icon-arrow-down:before {
-  content: "\e906";
-}
-.icon-arrow-up:before {
-  content: "\e907";
 }

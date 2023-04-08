@@ -1,0 +1,38 @@
+@import "variables";
+
+@mixin button {
+  text-align: center;
+  border: 2px solid $base-color;
+  color: $base-color;
+  padding: 20px 25px;
+  transition: 0.3s;
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $base-color;
+    color: #fff;
+  }
+}
+
+@mixin buttonReverse {
+  text-align: center;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 20px 25px;
+  transition: 0.3s;
+  display: block;
+  width: 80%;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: $base-color;
+  }
+}

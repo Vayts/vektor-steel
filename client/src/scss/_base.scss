@@ -1,3 +1,5 @@
+@import "variables";
+
 *, *:after, *:before {
   box-sizing: border-box;
 }
@@ -21,4 +23,31 @@ section {
   max-width: 1170px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 26px;
+  color: $base-color;
+  padding: 20px 0;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  letter-spacing: 1px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 2px;
+    background: $base-color;
+  }
+}
+
+.description {
+  font-size: 15px;
+  color: $sub-txt-color;
 }

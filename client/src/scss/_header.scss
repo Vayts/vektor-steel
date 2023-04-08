@@ -125,8 +125,8 @@
   }
 
   &__input {
-    width: 300px;
-    height: 30px;
+    width: 350px;
+    height: 35px;
     border: 1px solid #e0e0e0;
     background-color: transparent;
     color: #000;
@@ -149,7 +149,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 35px;
     background-color: $base-color;
     padding: 0 15px;
     border: none;
@@ -164,3 +164,6 @@
     }
   }
 }
+
+
+

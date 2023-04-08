@@ -40,8 +40,43 @@
                     </a>
                     <nav class="navigation">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a class="navigation__link link" href="#">Товари</a></li>
-                            <li class="navigation__item"><a class="navigation__link link" href="#">Продукти</a></li>
+                            <li class="navigation__item dropdown">
+                                <a class="navigation__link link dropdown__link" href="#">
+                                    Товари
+                                    <span class="icon-arrow-down dropdown__icon"></span>
+                                </a>
+                                <div class="dropdown__content-wrapper">
+                                    <ul class="dropdown__content">
+                                        <li class="dropdown__item dropdown">
+                                            <a class="dropdown-menu__link" href="products.html?filter=steelX12MF">
+                                                Сталь Х12МФ
+                                                <span class="icon-arrow-down dropdown__icon dropdown__icon_right"></span>
+                                            </a>
+                                            <div class="dropdown__content-wrapper dropdown__content-wrapper_right">
+                                                <ul class="dropdown__content">
+                                                    <li class="dropdown__item"><a href="products.html?filter=steelNerjaveika">Круг</a></li>
+                                                    <li class="dropdown__item"><a href="products.html?filter=steelR6M3">Лист</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown__item"><a href="products.html?filter=steelNerjaveika">Сталь нержавійка "Технічна"</a></li>
+                                        <li class="dropdown__item"><a href="products.html?filter=steelR6M3">Сталь Р6МЗ</a></li>
+                                        <li class="dropdown__item"><a href="products.html?filter=ASI30">ASI30</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="navigation__item dropdown">
+                                <a class="navigation__link link dropdown__link" href="#">
+                                    Послуги
+                                    <span class="icon-arrow-down dropdown__icon"></span>
+                                </a>
+                                <div class="dropdown__content-wrapper">
+                                    <ul class="dropdown__content">
+                                        <li class="dropdown__item"><a href="products.html?filter=steelNerjaveika">Різка лазером</a></li>
+                                        <li class="dropdown__item"><a href="products.html?filter=steelR6M3">Різка плазмою</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="navigation__item"><a class="navigation__link link" href="#">Про нас</a></li>
                             <li class="navigation__item"><a class="navigation__link link" href="#">Як нас знайти?</a></li>
                         </ul>
